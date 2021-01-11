@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="test_test_cloudcam-ejb_ejb_1.0-SNAPSHOTPU" transaction-type="JTA">
+  <provider>org.hibernate.ejb.HibernatePersistence</provider> 
+      <jta-data-source>java:/OracleDS</jta-data-source>
+      <class>remote.bean.entity.Account</class>
+      <class>remote.bean.entity.AccountCamera</class>
+      <class>remote.bean.entity.Agency</class>
+      <class>remote.bean.entity.Application</class>
+      <class>remote.bean.entity.Bunch</class>
+      <class>remote.bean.entity.BunchCamera</class>
+      <class>remote.bean.entity.Camera</class>
+      <class>remote.bean.entity.CameraPackage</class>
+      <class>remote.bean.entity.CameraStatus</class>
+      <class>remote.bean.entity.Config</class>
+      <class>remote.bean.entity.Customer</class>
+      <class>remote.bean.entity.CustomerApplication</class>
+      <class>remote.bean.entity.Fcm</class>
+      <class>remote.bean.entity.Feature</class>
+      <class>remote.bean.entity.GroupServer</class>
+      <class>remote.bean.entity.Location</class>
+      <class>remote.bean.entity.Model</class>
+      <class>remote.bean.entity.NlBankingTransaction</class>
+      <class>remote.bean.entity.Notification</class>
+      <class>remote.bean.entity.Package</class>
+      <class>remote.bean.entity.Record</class>
+      <class>remote.bean.entity.Role</class>
+      <class>remote.bean.entity.RoleFeature</class>
+      <class>remote.bean.entity.Service</class>
+      <class>remote.bean.entity.Storage</class>
+      <class>remote.bean.entity.Stream</class>
+      <class>remote.bean.entity.StreamingServer</class>
+      <class>remote.bean.entity.StreamingServerLog</class>
+      <class>remote.bean.entity.Token</class>
+      <class>remote.bean.entity.Transaction</class>
+      <class>remote.bean.entity.Worker</class>
+            
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+      <properties>
+         <property name="hibernate.dialect" 
+                  value="org.hibernate.dialect.OracleDialect"/>
+         <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      </properties>
+  </persistence-unit>
+</persistence>
